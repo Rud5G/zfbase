@@ -23,6 +23,9 @@
       <layoutsDirectory enabled="false"/>
       <modelsDirectory>
         <modelFile modelName="User"/>
+        <dbTableDirectory>
+          <dbTableFile dbTableName="AuthUser"/>
+        </dbTableDirectory>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <viewsDirectory>

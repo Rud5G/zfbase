@@ -1,5 +1,6 @@
 <?php
 /**
+ * Application Resource Plugin(Example)
  * 
  * @example
  * add to the /application/config/application.ini:
@@ -44,6 +45,5 @@ class ZFPlugins_Application_Resource_ExamplePlugin extends Zend_Application_Reso
         
         $foo = new self();
         return $foo;
-        
     }
 }

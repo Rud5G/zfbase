@@ -9,9 +9,19 @@
  * ; or
  * resources.foo.key = "value"
  * 
- * Access the ExamplePlugin from
- *  - ActionController 
+ * Access the ExamplePlugin
+ *  * from ActionController 
  *  - $bootstrap = $this->getInvokeArg('bootstrap');
+ *  - $examplePlugin = $bootstrap->getResource('ExamplePlugin');
+ *  
+ *  * from BootstrapResource
+ *  - $bootstrap = $this->getBootstrap();
+ *  - $bootstrap->init('ExamplePlugin');
+ *  - $examplePlugin = $bootstrap->getResource('ExamplePlugin');
+ *  
+ *  * Statically
+ *  - $front = Zend_Controller_Front::getInstance();
+ *  - $bootstrap = $front->getParam('bootstrap');
  *  - $examplePlugin = $bootstrap->getResource('ExamplePlugin');
  * 
  * @author [rg] r.gravestein <rudgergravestein@gmail.com>, 28 jan. 2011
